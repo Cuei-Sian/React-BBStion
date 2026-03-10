@@ -1,9 +1,12 @@
 import { Link, Outlet } from 'react-router';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function FrontendLayout() {
   return (
     <>
-      <header>
+      <Header />
+      {/* <header>
         <ul className="nav">
           <li className="nav-item">
             <Link className="nav-link" to="/">
@@ -46,13 +49,15 @@ function FrontendLayout() {
             </Link>
           </li>
         </ul>
-      </header>
+      </header> */}
       <main>
         <Outlet />
       </main>
-      <footer className="mt-5 text-center">
+
+      <Footer />
+      {/* <footer className="mt-5 text-center">
         <p>版權所有 © 2025 B.B. Station</p>
-      </footer>
+      </footer> */}
     </>
   );
 }
