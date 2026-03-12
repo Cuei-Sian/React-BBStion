@@ -50,7 +50,7 @@ function FrontendLayout() {
           </li>
         </ul>
       </header> */}
-      <main>
+      <main style={{ paddingTop: '80px' }}>
         <Outlet />
       </main>
 

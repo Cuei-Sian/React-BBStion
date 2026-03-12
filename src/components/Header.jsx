@@ -1,3 +1,5 @@
+import { Handbag, Baby, Search, Menu, ChevronLeft } from 'lucide-react';
+
 function Header() {
   return (
     <>
@@ -29,17 +31,19 @@ function Header() {
             >
               <i
                 className="text-primary-300"
-                data-lucide="search"
                 style={{ width: '24px', height: '24px' }}
-              ></i>
+              >
+                <Search />
+              </i>
             </button>
             {/* <!-- 2購物車 icon --> */}
             <button className="border-0 shadow-none bg-white d-lg-none d-block">
               <i
                 className="text-primary-300 "
-                data-lucide="handbag"
                 style={{ width: '24px', height: '24px' }}
-              ></i>
+              >
+                <Handbag />
+              </i>
             </button>
             {/* <!--  3搜尋  search--> */}
             <button
@@ -52,9 +56,10 @@ function Header() {
             >
               <i
                 className="text-primary-300 "
-                data-lucide="menu"
                 style={{ width: '24px', height: '24px' }}
-              ></i>
+              >
+                <Menu />
+              </i>
             </button>
           </div>
           {/* <!--主選單 search --> */}
@@ -77,9 +82,11 @@ function Header() {
               >
                 <i
                   className="text-gray-600"
-                  data-lucide="chevron-left"
                   style={{ width: '24px', height: '24px' }}
-                ></i>
+                >
+                  {/* data-lucide="chevron-left" */}
+                  <ChevronLeft />
+                </i>
               </button>
               <form className=" mt-2 " style={{ width: '100%' }} role="search">
                 <input
@@ -101,10 +108,11 @@ function Header() {
                     strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    data-lucide="search"
                     className="lucide lucide-search text-white"
                     style={{ width: '40px', height: '40px' }}
                   >
+                    {/* data-lucide="search" */}
+                    <Search />
                     <path d="m21 21-4.34-4.34"></path>
                     <circle cx="11" cy="11" r="8"></circle>
                   </svg>
@@ -203,13 +211,19 @@ function Header() {
               style={{ width: '48px', height: '48px' }}
               href="shoppingcar.html"
             >
-              <i className="i-icon-primary-300 " data-lucide="handbag"></i>
+              <i className="i-icon-primary-300 ">
+                {/* data-lucide="handbag" */}
+                <Handbag color="#6ABFDD" size={24} />
+              </i>
             </a>
             <a
               className="d-flex px-4 py-3 btn button-ghost-default-text rounded-pill"
               href="#"
             >
-              <i className="me-2 i-icon-primary-300 " data-lucide="baby"></i>
+              <i className="me-2 i-icon-primary-300 ">
+                {/* data-lucide="baby" */}
+                <Baby color="#6ABFDD" size={24} />
+              </i>
               <div className=" " href="#">
                 登入/註冊
               </div>
@@ -281,7 +295,10 @@ function Header() {
                 className=" sticky-bottom d-flex justify-content-center py-9 border-1 border-top bg-white"
                 href="#"
               >
-                <i className="me-2 i-icon-primary-300 " data-lucide="baby"></i>
+                <i className="me-2 i-icon-primary-300">
+                  {/* data-lucide="baby" */}
+                  <Baby color="#6ABFDD" size={24} />
+                </i>
                 <div className=" text-gray-700" href="#">
                   登入/註冊
                 </div>

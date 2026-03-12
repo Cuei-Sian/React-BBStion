@@ -1,4 +1,4 @@
-// *, *::before, *::after { 
+// *, *::before, *::after {
 //     outline: 1px solid #189EC7; }
 
 .navbar-brand {
@@ -14,6 +14,7 @@
   font-weight: 400;
   padding-top: 12px;
   padding-bottom: 8px;
+  font-family: 'SweiGothic', sans-serif;
 
   a {
     color: #787f85;
@@ -28,7 +29,7 @@
 }
 
 .underline .nav-link::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0; /* 線條位置 */
   left: 50%; /* 從中間開始 */
@@ -47,29 +48,29 @@
   transform: translateX(-50%) scaleX(1);
 }
 
-.i-icon-primary-300{
+.i-icon-primary-300 {
   color: $primary-300;
 }
 
-.btn-close{
+.btn-close {
   color: $primary-300 !important;
-  &:hover{
+  &:hover {
     border-radius: none !important;
   }
-  
 }
-  .from-button{
+.from-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 32px;
+  right: 21px;
+  border-radius: 100%;
+}
+.search-input {
+  position: relative;
+  .search-button {
     position: absolute;
-    width:40px; 
-    height:40px;
-    top: 32px;
-    right: 21px;
-    border-radius: 100%;
-  }
-  .search-input{
-    position: relative;
-  .search-button{
-    position: absolute;
-    top:12px;
+    top: 12px;
     left: 16px;
-  }}
+  }
+}
