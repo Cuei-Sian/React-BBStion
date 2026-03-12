@@ -242,7 +242,7 @@ function Header() {
             <div className="offcanvas-header py-0 border-4 border-bottom">
               <a className="navbar-brand p-0" href="#">
                 <img
-                  src="/assets/images/index/Logotype.svg"
+                  src="https://raw.githubusercontent.com/Cuei-Sian/React-BBStation-picture/1de5d61eae1c385769823f23f6c8862d77641132/images/index/Logotype.svg"
                   alt="logo"
                   style={{ width: '100px', height: '32px' }}
                 />
