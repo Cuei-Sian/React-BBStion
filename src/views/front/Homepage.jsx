@@ -1,5 +1,5 @@
 function Homepage() {
-  return <h1 className="mt-5">首頁</h1>;
+  return <></>;
 }
 
 export default Homepage;
