@@ -15,6 +15,10 @@ import {
 } from 'lucide-react';
 
 function Homepage() {
+  // const categories = ['全部分類', '嬰兒服飾', '男孩服飾', '玩具',
+  //   '育兒書籍', '哺乳用具', '推車/安全座椅', '媽媽用品',
+  // ];
+
   return (
     <>
       <section>
@@ -81,7 +85,7 @@ function Homepage() {
                 <i
                   className=" text-gray-600"
                   // data-lucide="chevron-down"
-                  style={{ width: '24px', height: '24px' }}
+                  style={{ width: '16px', height: '16px' }}
                 >
                   <ChevronDown />
                 </i>
@@ -166,7 +170,6 @@ function Homepage() {
                   className="form-control py-5 rounded-start rounded-pill "
                   placeholder="輸入關鍵字..."
                   aria-label="Text input with dropdown button"
-                  // type="submit"
                   id="dropdownMenu2"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -174,11 +177,12 @@ function Homepage() {
                 <button
                   className=" btn btn-primary rounded-circle  me-2 position-absolute top-50 end-0 translate-middle-y me-2 d-flex justify-content-center align-items-center"
                   style={{ width: '48px', height: '48px' }}
+                  type="submit"
                 >
                   <i
                     className=" text-white"
                     // data-lucide="search"
-                    style={{ width: '32px', height: '32px' }}
+                    style={{ width: '18px', height: '18px' }}
                   >
                     <Search />
                   </i>
